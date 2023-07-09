@@ -1,0 +1,329 @@
+/* reset*/ 
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* estilo para el carusel (index)*/
+.d-item {
+    height:500px;
+
+}
+
+.d-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6)
+}
+
+/* estilo para el contenido principal (index) */
+
+.nuestros-servicios{ 
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: rgba(162, 184, 189, 0.349);
+}
+
+
+main {
+    background-color: black;
+    color: whitesmoke;
+    align-items: center;
+ }
+
+/*estilos para el footer */ 
+.pie-pagina{
+    width: 100%;
+    background-color: black;
+}
+.pie-pagina .grupo-uno{ 
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap:30px;
+    padding: 35px 0px;
+    text-align: center;
+}
+
+.pie-pagina .grupo-uno .box figure {
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-uno .box figure img {
+    width: 200px;
+}
+
+.pie-pagina .grupo-uno .box h2 {
+    color:#FEC737;
+    margin-bottom: 25px;
+}
+
+.pie-pagina .grupo-uno .box p {
+    margin-bottom: 10px;
+}
+
+
+/*estilos iconos (footer) */
+.pie-pagina .grupo-uno .box .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #2C3860;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.pie-pagina .grupo-uno .box .red-social a:hover {
+    color:#FEC737;
+}
+
+.pie-pagina .grupo-dos {
+    padding: 15px 10px;
+    text-align: center;
+}
+
+
+/* mg para phone */ 
+.contenedor-padre {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:repeat(3,33%); 
+    margin: 2rem 1rem 0rem 1rem;
+    padding: 1rem 1rem 3rem 1rem;
+    text-align: center;
+}
+
+.contenedor figure {
+    position: relative;
+    cursor:pointer;
+    overflow: hidden;  
+    height: 375px;
+}
+
+.contenedor figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: all 500ms ease-out;
+}
+
+/*efecto de las imágenes */
+.contenedor figure .capa {
+    position:absolute;
+    border-radius: 8px;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(162, 184, 189, 0.349);
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+
+.contenedor figure .capa{
+    opacity: 1;
+    visibility: visible;
+}
+.contenedor figure .capa h3 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.5rem;
+}
+
+.contenedor figure .capa p {
+    font-size: 26px;
+    color: black;
+    background-color:rgba(162, 184, 189, 0.349);
+}
+
+.contenedor figure:hover .capa h3{
+    margin-top: 90px;
+    margin-bottom: 15px;
+}
+
+.contenedor figure .capa .titulo-servicio {
+    margin-bottom: 400px;
+    transition: all 500ms ease-out;
+}
+
+/*estilos para el main (nuestras propuestas) */
+.tarjeta-padre {
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,1fr);
+    justify-items:center; 
+}
+
+.tarjeta-hijo {
+    text-align: center;
+    margin: 5px; 
+}
+
+/*estilos para el main (planes disponibles) -- toma algnos del main de "nuestras propuestas" */
+.texto-flotante {
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* estilos para el main (contacto)*/
+
+.consultas-contenedor fieldset{
+    margin: 1rem;
+    padding: 1rem 0.3rem 3rem 0.3rem;
+}
+
+
+.consultas-contenedor fieldset {
+    margin: 1rem;
+}
+
+.consultas-contenedor fieldset .formulario-item {
+    margin:0.5rem;
+}
+
+/*estilos para el main (Planes disponibibles) */
+.padre-imagen {
+    display:none;
+}
+
+/* clases y horarios */
+.clases-horarios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.clases-horarios img {
+    width: 100%;
+    height: 100%;
+    max-width: 700px;
+    max-height: 700px;
+}
+
+
+
+/* ---------------------- MQ para desktop ---------------------*/ 
+/* INDEX */ 
+@media screen and (min-width:1024px){
+    .contenedor-padre {
+        display: flex;
+        text-align: center;
+        justify-content:space-around;
+        align-items: center;
+        gap:0.5rem;
+    }
+
+    .contenedor figure {
+        position: relative;
+        cursor:pointer;
+        overflow: hidden;  
+        width:98%;
+        height: 350px;
+    }
+
+    .contenedor figure img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+        transition: all 500ms ease-out;
+    }
+
+    .contenedor figure .capa {
+    position:absolute;
+    border-radius: 8px;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(162, 184, 189, 0.349);
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.contenedor figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedor figure:hover > .capa h3{
+    margin-top: 90px;
+    margin-bottom: 15px;
+}
+
+.contenedor figure .capa .titulo-servicio {
+    margin-bottom: 400px;
+    transition: all 500ms ease-out;
+}
+
+.contenedor figure:hover > img {
+    transform: scale(1.3);
+}
+
+.contenedor-padre figure .capa p {
+    font-size:20px;
+}
+
+/*incremento texto servicios*/ 
+    .nuestros-servicios p {
+        font-size: 15px;
+    }
+
+
+/*footer desktop */
+    .pie-pagina .grupo-uno{ 
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 45px 0px; 
+    }
+    .pie-pagina .grupo-uno .box figure img {
+        width: 250px;
+    }
+}
+
+/* NUESTRAS PROPUESTAS*/ 
+@media screen and (min-width:1024px){
+.tarjeta-padre {
+    grid-template-columns:repeat(4,1fr); 
+    grid-template-rows: 1fr;
+    justify-content:space-around;
+   
+}
+
+/* PLANES DISPONIBLES*/
+.texto-flotante{
+    position: absolute;
+    top:270px;
+    width: 400px;
+    left:20px;
+    padding: 10px;
+    font-size: 50px;
+    
+}
+.padre-imagen {
+    display: flex;
+}
+
+.padre-imagen img{
+    width: 100%;
+    height: 100%;
+}
+
+}
+
