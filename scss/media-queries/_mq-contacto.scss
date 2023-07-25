@@ -1,0 +1,32 @@
+//estilos para contacto desktop 
+/* mq para contacto tablet*/
+@media screen and (min-width:600px) {
+    body main .contactate {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 90%;
+        .consultas-contenedor {
+            h3{
+                max-width: 700px;
+            }
+        }
+
+    }
+        
+}
+
+@media screen and (min-width:1024px){
+    body main .contactate {
+        .contacto-contenedor {
+            .box-contacto {
+                iframe {
+                    width: 700px;
+                    height: 500px;
+                }
+            }
+        }
+    }
+}
+
+
+
+

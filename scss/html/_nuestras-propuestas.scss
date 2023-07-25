@@ -1,0 +1,18 @@
+//estilos para sección nuestras propiestas
+/*estilos para sección nuestras propiestas */
+body{
+    main .tarjeta-padre {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+        row-gap: 20px;
+        justify-items:center;     
+            main .tarjeta-hijo{
+            text-align: center;
+            margin: 6rem;
+        }
+    }
+
+
+}

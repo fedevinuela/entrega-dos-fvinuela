@@ -1,0 +1,40 @@
+//estilos para contacto 
+/* estilos para contacto */
+@import "../utilidades/variables";
+
+body main {
+    .contactate {
+        @extend %estilo-gral-phone;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        h3 {
+         margin: 1rem 1rem 0rem 1rem;
+        }
+
+        fieldset {
+            margin-left: 1rem;
+            max-width: 500px;
+        }
+        .consulta {
+            width: 80%;
+            max-width: 500px;
+            height: 250px;
+        }
+    }
+
+    .contacto-contenedor {
+        @extend %estilo-gral-phone;
+        h2{
+            color: $color-principal
+        }
+       
+    }
+    .contacto-contenedor .box-contacto p {
+        @extend %estilo-texto;
+    }
+
+
+
+}
+

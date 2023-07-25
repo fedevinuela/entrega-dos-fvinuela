@@ -1,0 +1,32 @@
+//variables de color
+$color-principal:#FEC737;
+$color-secundario:#2C3860;
+
+
+//Mixin 
+//Boton-planes
+@mixin boton-estandar {
+    background-color: $color-secundario;
+    color: white;
+    border: $color-principal;
+}
+
+@mixin boton-hover {
+    background-color: $color-secundario;
+    color: $color-principal;
+    border: $color-principal;
+ 
+}
+
+//extend
+%estilo-gral-phone {
+    margin: 10px 5px 5px 5px;
+    text-align: center;
+    padding: 0.8px;
+    row-gap: 10px;
+}
+
+%estilo-texto {
+    font-size: 20px;
+    color:whitesmoke
+}

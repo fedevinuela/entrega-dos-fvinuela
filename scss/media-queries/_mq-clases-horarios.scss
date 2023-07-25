@@ -1,0 +1,26 @@
+@import "../utilidades/variables";
+//mq tablet clases y horarios 
+/*mq tablet clases y horarios */ 
+@media screen and (min-width:600px) {
+    body main .caja-clases{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row: 1fr;
+        .clases-explicacion {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        align-items: center;
+        }
+        
+    }
+}
+
+@media screen and (min-width:1024px){
+    body main .caja-clases {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        height: 100vh;
+    }
+
+}

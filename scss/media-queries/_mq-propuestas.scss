@@ -1,0 +1,19 @@
+//media queries propuestas
+/* mq tablet propuestas */
+@media screen and (min-width:600px) {
+    body main .tarjeta-padre {
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    }
+}
+
+// desktop
+/* mq desktop propuestas*/ 
+
+@media screen and (min-width:1024px){
+    body main .tarjeta-padre{
+        grid-template-columns:repeat(4,1fr); 
+        grid-template-rows: 1fr;
+        justify-content:space-around;
+    }
+}

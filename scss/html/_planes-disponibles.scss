@@ -1,0 +1,21 @@
+// estilos para planes disponibles
+/* estilos para planes disponibles */
+@import "../utilidades/variables";
+
+body main {
+    .texto-flotante{
+        margin: 10px;
+        text-align: center;
+    }
+    .padre-imagen {
+    display:none;
+    }
+    .tarjeta-padre .tarjeta-hijo .card .card-body a {
+        @include boton-estandar;
+       
+    }
+    .tarjeta-padre .tarjeta-hijo .card .card-body a:hover{
+        @include boton-hover
+        
+    }
+}
