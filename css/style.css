@@ -180,8 +180,8 @@ body main .contacto-contenedor h2 {
   color: #FEC737; }
 
 body main .contacto-contenedor .box-contacto iframe {
-  max-width: 400px;
-  max-height: 300px; }
+  max-width: 300px;
+  max-height: 250px; }
 
 /*media queries para tablet*/
 @media screen and (min-width: 600px) {
