@@ -42,7 +42,7 @@ body main {
       body main .contenedor-padre .contenedor figure h3 {
         font-family: 'Roboto', sans-serif;
         font-family: 'Rubik', sans-serif;
-        font-size: 3rem;
+        font-size: 2.5rem;
         align-items: center;
         margin-top: 6rem; }
       body main .contenedor-padre .contenedor figure p {
@@ -140,7 +140,8 @@ body main {
     display: flex;
     align-items: center;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    padding: 20px; }
     body main .clases-horarios img {
       width: 100%;
       height: 100%;
@@ -163,10 +164,13 @@ body main .contactate {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr; }
   body main .contactate h3 {
-    margin: 1rem 1rem 0rem 1rem; }
+    margin: 1rem 1rem 1rem 1rem; }
   body main .contactate fieldset {
     margin-left: 1rem;
     max-width: 500px; }
+    body main .contactate fieldset .formulario-item {
+      margin: 3px;
+      text-align: left; }
   body main .contactate .consulta {
     width: 80%;
     max-width: 500px;
@@ -174,6 +178,15 @@ body main .contactate {
 
 body main .contacto-contenedor h2 {
   color: #FEC737; }
+
+body main .contacto-contenedor .box-contacto iframe {
+  max-width: 400px;
+  max-height: 300px; }
+
+/*media queries para tablet*/
+@media screen and (min-width: 600px) {
+  body main .contenedor-padre figure .capa h3 {
+    font-size: 2.5rem; } }
 
 /*media queries index*/
 @media screen and (min-width: 1024px) {
@@ -259,12 +272,15 @@ body main .contacto-contenedor h2 {
     grid-template-columns: 50% 50%;
     grid-template-rows: 90%; }
     body main .contactate .consultas-contenedor h3 {
-      max-width: 700px; } }
+      max-width: 700px; }
+    body main .contactate .contacto-contenedor .box-contacto iframe {
+      max-width: 250px;
+      max-height: 200px; } }
 
 @media screen and (min-width: 1024px) {
   body main .contactate .contacto-contenedor .box-contacto iframe {
-    width: 700px;
-    height: 500px; } }
+    max-width: 700px;
+    max-height: 500px; } }
 
 body main .clases-explicacion, body main .contactate, body main .contacto-contenedor {
   margin: 10px 5px 5px 5px;
@@ -285,14 +301,17 @@ body main .contacto-contenedor .box-contacto p {
     body main .caja-clases .clases-explicacion {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      align-items: center; } }
+      grid-template-rows: repeat(4, 1fr);
+      align-items: center;
+      padding: 10px; }
+      body main .caja-clases .clases-explicacion h2:hover {
+        color: #FEC737;
+        transition: all 500ms ease-out; } }
 
 @media screen and (min-width: 1024px) {
   body main .caja-clases {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    height: 100vh; } }
+    grid-template-rows: 1fr; } }
 
 body main .clases-explicacion, body main .contactate, body main .contacto-contenedor {
   margin: 10px 5px 5px 5px;

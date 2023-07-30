@@ -1,3 +1,13 @@
+//media queries para tablet
+/*media queries para tablet*/
+@media screen and (min-width:600px) {
+    body main .contenedor-padre{
+        figure .capa h3 {
+            font-size: 2.5rem;
+        }
+    }
+}
+
 //media queries para desktop
 /*media queries index*/
 @media screen and (min-width:1024px){
@@ -30,6 +40,7 @@
                 .titulo-servicio{
                    transition: all 500ms ease-out;
                 }
+
                 p{
                     font-size:20px; 
                 }   

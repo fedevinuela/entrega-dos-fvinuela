@@ -9,12 +9,16 @@ body main {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         h3 {
-         margin: 1rem 1rem 0rem 1rem;
+         margin: 1rem 1rem 1rem 1rem;
         }
 
         fieldset {
             margin-left: 1rem;
             max-width: 500px;
+            .formulario-item{
+                margin: 3px;
+                text-align: left;
+            }
         }
         .consulta {
             width: 80%;
@@ -30,8 +34,14 @@ body main {
         }
        
     }
-    .contacto-contenedor .box-contacto p {
+    .contacto-contenedor .box-contacto {
+        p {
         @extend %estilo-texto;
+        }
+        iframe{
+            max-width: 400px;
+            max-height: 300px;
+        }
     }
 
 
