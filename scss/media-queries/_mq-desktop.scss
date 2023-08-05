@@ -1,17 +1,7 @@
-//media queries para tablet
-/*media queries para tablet*/
-@media screen and (min-width:600px) {
-    body main .contenedor-padre{
-        figure .capa h3 {
-            font-size: 2.5rem;
-        }
-    }
-}
-
-//media queries para desktop
-/*media queries index*/
+//mq index para desktop
+/*mq index para desktop*/
 @media screen and (min-width:1024px){
-    body main .contenedor-padre{
+    main .contenedor-padre{
         display: flex;
         text-align: center;
         justify-content:space-around;
@@ -71,8 +61,59 @@
                 width: 250px;
             }
     }
-    
-
 
 }
 
+// desktop
+/* mq desktop propuestas*/ 
+
+@media screen and (min-width:1024px){
+    body main .tarjeta-padre{
+        grid-template-columns:repeat(4,1fr); 
+        grid-template-rows: 1fr;
+        justify-content:space-around;
+    }
+}
+
+// mq desktop planes disponibles
+/* mq desktop planes disponibles*/ 
+@media screen and (min-width:1024px){
+    main {
+        .texto-flotante {
+            position: absolute;
+            top:270px;
+            width: 400px;
+            left:20px;
+            padding: 10px;
+            font-size: 50px;
+        }
+
+    }
+}
+
+//mq-desktop clases y horarios
+/* mq-desktop clases y horarios*/
+@media screen and (min-width:1024px){
+    main .caja-clases {
+        grid-template-columns:repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }    
+
+}
+
+
+//mq desktop para contacto  
+/* mq desktop para contacto*/
+
+@media screen and (min-width:1024px){
+    body main .contactate {
+        .contacto-contenedor {
+            .box-contacto {
+                iframe {
+                    max-width: 700px;
+                    max-height: 500px;
+                }
+            }
+        }
+    }
+}

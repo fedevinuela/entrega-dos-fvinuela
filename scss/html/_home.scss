@@ -2,11 +2,8 @@
 //estilos para el index
 /*estilos para el dindex*/
 
-body { 
-
-
-    main {
-        .carousel-inner {
+main {
+    .carousel-inner {
             .d-item {
                 height:400px;
             }
@@ -16,7 +13,7 @@ body {
                 filter: brightness(0.6)
             }
 
-        }
+    }
 
         background-color: black;
         color: whitesmoke;
@@ -71,63 +68,64 @@ body {
                     }
                 }
             }
-        }
-    }
+}
 
-    footer{
-            width: 100%;
-            background-color:black;
-            .grupo-uno{ 
-                width: 90%;
-                margin: auto;
-                display: grid;
-                grid-template-columns: repeat(1,1fr);
-                grid-gap:30px;
-                padding: 35px 0px;
-                text-align: center;
-                .box {
-                    figure {
-                    width: 100%;
-                    height:100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 10px;
-                       a img {
-                        width: 200px;
-                        }
-                    }
-                    h2 {
-                        color:#FEC737;
-                        margin-bottom: 25px;
-                    }
-                    p {
-                        margin-bottom: 20px;
-                        color: white;
-                    }
-                    .red-social{
-                        a{
-                            display: inline-block;
-                            text-decoration: none;
-                            width: 45px;
-                            height: 45px;
-                            line-height: 45px;
-                            color: #2C3860;
-                            margin-left: 10px;
-                            text-align: center;  
-                        } 
 
-                        a:hover {
-                            color:#FEC737;
-                        }
-
+footer{
+    width: 100%;
+    background-color:black;
+        .grupo-uno{ 
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-gap:30px;
+            padding: 35px 0px;
+            text-align: center;
+            .box {
+                figure {
+                width: 100%;
+                height:100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                    a img {
+                    width: 200px;
                     }
                 }
+                h2 {
+                    color:#FEC737;
+                    margin-bottom: 25px;
+                    }
+                p {
+                    margin-bottom: 20px;
+                    color: white;
+                    }
+                .red-social{
+                    a{
+                        display: inline-block;
+                        text-decoration: none;
+                        width: 45px;
+                        height: 45px;
+                        line-height: 45px;
+                        color: #2C3860;
+                        margin-left: 10px;
+                        text-align: center;  
+                    } 
+
+                    a:hover {
+                        color:#FEC737;
+                        }
+
+                    }
+            }
                     
-            }
-            .grupo-dos{
-                padding: 15px 10px;
-                text-align: center;
-            }
         }
+
+        .grupo-dos{
+            padding: 15px 10px;
+            text-align: center;
+        }
+    }
     

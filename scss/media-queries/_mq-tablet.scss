@@ -1,0 +1,104 @@
+@import "../utilidades/variables";
+//mq index para tablet
+/*mq index para tablet*/
+@media screen and (min-width:600px) {
+    main .contenedor-padre{
+        figure .capa h3 {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+//media queries propuestas
+/* mq tablet propuestas */
+@media screen and (min-width:600px) {
+    main .tarjeta-padre {
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    }
+}
+
+//mq tablet planes disponibles 
+/*mq tablet planes disponibles */
+@media screen and (min-width:600px) {
+    main {
+       .padre-imagen {
+            display: flex;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+//mq tablet clases y horarios 
+/*mq tablet clases y horarios */ 
+@media screen and (min-width:600px) {
+    main .caja-clases{
+        .clases-explicacion {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,1fr);
+        align-items: center;
+        padding: 10px;
+        
+        .box-explicacion {
+            grid-column: span 2;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid black;
+            border-top: 1px solid black; 
+            h2 {
+                width: 250px;
+            }
+
+            p{
+                margin: 30px;
+                text-align: justify;
+                width: 400px;
+            }
+        }
+
+        .box-explicacion:hover {
+            border-bottom: solid 1px $color-secundario; 
+            border-top: 1px solid $color-secundario; 
+            transition: all 0.6s ease;
+           
+            
+            h2 {
+                color: $color-principal;
+            }
+        }
+        }
+        
+    }
+    
+}
+
+//mq tablet para contacto 
+/* mq tablet para contacto*/
+@media screen and (min-width:600px) {
+    main .contactate{
+        grid-template-columns: 50% 50%;
+        
+        .consultas-contenedor {
+            h3{
+                max-width: 700px;
+            }
+            form fieldset .boton-formulario {
+                max-width: 100px;
+            }
+        }
+        .contacto-contenedor {
+            .box-contacto {
+                iframe {
+                    max-width: 250px;
+                    max-height: 200px;
+                }
+            }
+        }
+
+    }
+        
+}

@@ -2,9 +2,8 @@
 /* estilos para contacto */
 @import "../utilidades/variables";
 
-body main {
+main {
     .contactate {
-        @extend %estilo-gral-phone;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
@@ -18,7 +17,18 @@ body main {
             .formulario-item{
                 margin: 3px;
                 text-align: left;
+                label {
+                    font-size: 24px;
+                }
+                input {
+                    width: 100%;
+                }
+
             }
+                .boton-formulario {
+                    width: 200px;
+                    text-align: center;
+                }
         }
         .consulta {
             width: 80%;

@@ -1,6 +1,6 @@
 // estilos para clases y horarios 
 /* estilos par clases y horarios */
-body main {
+main .caja-clases{
     display: grid;
     grid-template-columns: 1 fr;
     grid-template-rows: 1fr;
@@ -20,5 +20,4 @@ body main {
     .clases-explicacion {
         @extend %estilo-gral-phone;
     }
-
 }
