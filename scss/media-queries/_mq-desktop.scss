@@ -106,14 +106,8 @@
 /* mq desktop para contacto*/
 
 @media screen and (min-width:1024px){
-    body main .contactate {
-        .contacto-contenedor {
-            .box-contacto {
-                iframe {
-                    max-width: 700px;
-                    max-height: 500px;
-                }
-            }
-        }
+    main .contacto-contenedor .box-contacto iframe {
+        max-width: 300px;
+        max-height: 250px;
     }
 }
